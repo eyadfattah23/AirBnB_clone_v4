@@ -187,6 +187,8 @@ Eyad - [Github](https://github.com/eyadfattah23) / [Linkedin] ()
 
 Second part of Airbnb: Joann Vuong
 
+clear the repo from .pyc files by: `find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf`
+
 ## License
 
 Public Domain. No copy write protection.
