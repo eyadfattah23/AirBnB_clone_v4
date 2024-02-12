@@ -7,3 +7,43 @@ Import JQuery
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 ```
+
+# 1. for cleaning pycache:
+
+`find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf`
+
+# 2. Select some Amenities to be comfortable!
+
+![alt text](image.png)
+
+## steps:
+
+1. Replace the route 0-hbnb with 1-hbnb in the file 1-hbnb.py (based on 0-hbnb.py)
+2. Create a new template 1-hbnb.html (based on 0-hbnb.html) and update it:
+3. Import JQuery in the `<head>` tag
+
+   - `<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>`
+
+4. Import the JavaScript static/scripts/1-hbnb.js in the `<head>` tag
+
+   - In 1-hbnb.html and the following HTML files, add this variable cache_id as query string to the above `<script>` tag
+   - `<script type="text/javascript" src="../static/scripts/1-hbnb.js?{{ cache_id }}"></script>`
+
+5. Add a `<input type="checkbox">` tag to the li tag of each amenity
+
+6. css added:
+
+   ```css
+   #checkbox {
+     margin-right: 10px;
+   }
+   ```
+
+   ```css
+   .amenities h4 {
+     height: 18px;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+   }
+   ```
