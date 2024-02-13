@@ -31,7 +31,7 @@ Import JQuery
 
 5. Add a `<input type="checkbox">` tag to the li tag of each amenity
 
-6. css added: (remember that you height parameter is necessary for handling the oveflow)
+6. css added: (remember that you height parameter is necessary for handling the overflow)
 
    ```css
    #checkbox {
@@ -47,3 +47,12 @@ Import JQuery
      text-overflow: ellipsis;
    }
    ```
+
+# 3. To start the API in the port 5001:
+
+```bash
+ HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db HBNB_API_PORT=5001 python3 -m api.v1.app
+...
+```
+
+**our goal in this task was to add a new div to show us the connection status with the api**
