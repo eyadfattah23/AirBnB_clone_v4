@@ -31,7 +31,7 @@ Import JQuery
 
 5. Add a `<input type="checkbox">` tag to the li tag of each amenity
 
-6. css added:
+6. css added: (remember that you height parameter is necessary for handling the oveflow)
 
    ```css
    #checkbox {
