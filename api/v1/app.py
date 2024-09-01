@@ -36,6 +36,14 @@ app.config['SWAGGER'] = {
     'uiversion': 3
 }
 
+
+@app.errorhandler(400)
+def custom400(error):
+    response = make_response(jsonify({'error': error.description}), 400)
+    return response
+    # etc.
+
+
 Swagger(app)
 
 
